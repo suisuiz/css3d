@@ -1,0 +1,17 @@
+{
+  "name": "css_3d",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "yarn build01; yarn build02; yarn build10",
+    "build01": "cd 01cardform; parcel build *.html --public-url . ",
+    "build02": "cd 02scroll; parcel build *.html --public-url . ",
+    "build10": "cd 10rotate3d; parcel build *.html --public-url . "
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.2"
+  }
+}
